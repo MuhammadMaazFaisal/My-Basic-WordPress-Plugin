@@ -1,0 +1,35 @@
+{
+    "name": "maaz/my-basic-plugin",
+    "description": "Handle the basics with this plugin.",
+	"license": "GPL-3.0+",
+	"version": "1.0.0",
+	"keywords": [
+		"wordpress",
+		"plugin"
+	],
+	"require": {
+		"php": ">=5.4.0"
+	},
+	"homepage": "https://example.com/plugins/the-basic/",
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.1",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	},
+    "authors": [
+        {
+            "name": "Muhammad Maaz",
+            "email": "m.maazfaisal0301@gmail.com"
+        }
+    ],
+	"autoload": {
+		"psr-4": {
+			 "MyBasicPlugin\\": "src/"
+		}
+	}
+}
